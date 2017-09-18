@@ -43,7 +43,7 @@ def download_zip_series(zip_links):
 
         #obtain filename
         file_name = link.split('/')[-1]
-        os.system("./download.sh %s %s" % (link, file_name))
+        os.system("./download.sh %s %s" % ('"'+link+'"', file_name))
         #os.system("./download.sh 'http://emergency.copernicus.eu/mapping/list-of-components/EMSR238/feed/mapping/download/147409/EMSR238_03QUERCIANELLA_02GRADING_MAP_v1_vector.zip' EMSR238_03QUERCIANELLA_02GRADING_MAP_v1_vector.zip")
         #subprocess.call(["./download.sh", link, file_name])
         #session = requests.Session()
