@@ -9,4 +9,4 @@ The script merge all shape files in zips file of multiple emergencies in a folde
 
 # get_ems_zips
 
-Script realized for mass download of ZIPs package vector files of EMS. Configure in the script TAG of emergencies ex: emergency_tags=["EMSRXXX","EMSRYYY"]. Run the script. The script use a download.sh bash (thanks to [aborruso](https://github.com/aborruso) file for the curl operations and cookie management
+Script realized for mass download of ZIPs package vector files of EMS. Configure in the script TAG of emergencies ex: emergency_tags=["EMSRXXX","EMSRYYY"]. Run the script. The script use CURL (see as example download.sh bash thanks to [aborruso](https://github.com/aborruso) for the curl operations and cookie management)
