@@ -12,7 +12,7 @@ import shapefile
 ###############################################################################
 # CONFIGURATION
 # configure the EMS tags that you want as ZIP vector data
-emergency_tags=["EMSR241"]
+emergency_tags=["EMSR238"]
 elements = ['area_of_interest', 'crisis_information_poly', 'hydrography_line', 'hydrography_poly']
 ###############################################################################
 
