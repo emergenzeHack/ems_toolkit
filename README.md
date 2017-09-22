@@ -2,7 +2,7 @@
 A set of script and tools opensource to manage EMS Copernicus Service
 (idea by [iltempe](https://github.com/iltempe))
 
-Usage: Configure the app in ems.py as described. Run "python ems.py" to donwload data and marge the shapefiles
+Usage: Configure the app in ems.py as described. Run "python ems.py" to download data and merge shapefiles
 
 
 # merge_ems_zips.py
