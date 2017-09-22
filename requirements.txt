@@ -1,0 +1,4 @@
+html5lib==0.999999999
+requests==2.18.4
+beautifulsoup4==4.6.0
+pyshp==1.2.12

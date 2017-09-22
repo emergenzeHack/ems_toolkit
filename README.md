@@ -18,6 +18,5 @@ Script realized for mass download of pics files of EMS. The script use CURL inst
 # merge_ems_zips.py
 
 The script merge all shape files in zips file of multiple emergencies in a folder. Store all zip files of one or more emergencies.
-
 Script realized starting from [this script](https://github.com/emergenzeHack/terremotocentro_geodata/blob/gh-pages/CopernicusEMS/scripts/copernicus_EMSR.py), thanks to [geofrizz](https://github.com/geofrizz).
 
