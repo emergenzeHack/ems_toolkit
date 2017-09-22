@@ -8,13 +8,6 @@ import subprocess
 from bs4 import BeautifulSoup
 
 
-
-###############################################################################
-# CONFIGURATION
-# configure the EMS tags that you want as ZIP vector data
-emergency_tags=["EMSR238"]
-###############################################################################
-
 def get_zip_links(archive_url):
 
     # create response object
@@ -48,7 +41,7 @@ def download_zip_series(zip_links):
         print "%s downloaded!\n"%file_name
     return
 
-if __name__ == "__main__":
+def get_ems_zips (emergency_tags):
 
     for ems in emergency_tags:        # main
 
