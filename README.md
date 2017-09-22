@@ -1,12 +1,19 @@
 # EMS ToolKIT
 A set of scripts and opensource tools to work with open data produced by the Copernicus Emergency Management Service.
 
-Usage: Configure the app in ems.py as described. Configure in the script TAG of emergencies ex: emergency_tags=["EMSRXXX","EMSRYYY"]. Configure in elements array the data of interest. Run "python ems.py" to download data and merge shapefiles
-
+Usage: Configure the app in ems.py as described:
+- Configure in the script TAG of emergencies ex: emergency_tags=["EMSRXXX","EMSRYYY"].
+- Configure in elements array the data of interest.
+- Configure in pics_conf arry the type of images (jpg, tif, pdf) and the resolution (100,200,300)
+- Run "python ems.py" to download data and merge shapefiles
 
 # get_ems_zips.py
 
 Script realized for mass download of ZIPs package vector files of EMS. The script use CURL (thanks to [aborruso](https://github.com/aborruso) for the curl operations for cookie management)
+
+# get_ems_pics.py
+
+Script realized for mass download of pics files of EMS. The script use CURL instructions.
 
 # merge_ems_zips.py
 
