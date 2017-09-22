@@ -1,6 +1,5 @@
 # EMS ToolKIT
-A set of script and tools opensource to manage EMS Copernicus Service
-(designed by [iltempe](https://github.com/iltempe))
+A set of scripts and opensource tools to work with open data produced by the Copernicus Emergency Management Service(designed by [iltempe](https://github.com/iltempe))
 
 Usage: Configure the app in ems.py as described. Configure in the script TAG of emergencies ex: emergency_tags=["EMSRXXX","EMSRYYY"]. Configure in elements array the data of interest. Run "python ems.py" to download data and merge shapefiles
 
