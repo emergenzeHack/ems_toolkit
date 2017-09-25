@@ -32,10 +32,7 @@ def download_zip_series(zip_links):
         #obtain filename
         file_name = link.split('/')[-1]
 
-        command="curl -s -c cookie "+'"'+link+'"'
-        os.system(command)
-
-        command1="curl -b cookie -s "+'"'+link+'" -H "Origin: http://emergency.copernicus.eu" -H "Accept-Encoding: gzip, deflate" -H "Accept-Language: it-IT,it;q=0.8,en-US;q=0.6,en;q=0.4" -H "Upgrade-Insecure-Requests: 1" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36" -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" -H "Cache-Control: max-age=0" -H "Referer: '+link+'" -H "Connection: keep-alive" --data "confirmation=1^&op=+Download+file+^&form_build_id=form-wfWtSFuhPbanIpxEiVM8LPHnvLF5LEOuakUYLcXkCeI^&form_id=emsmapping_disclaimer_download_form" --compressed > '+ file_name
+        command1="curl -s "+'"'+link+'" -H "User-Agent: EMS Toolkit (dfe3b314c95db26fafbc758c17db76ec)" -H "Referer: '+link+'" -H "Connection: keep-alive" > '+ file_name
         os.system(command1)
 
         print "%s downloaded!\n"%file_name
