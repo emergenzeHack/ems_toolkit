@@ -32,8 +32,8 @@ def download_zip_series(zip_links):
         #obtain filename
         file_name = link.split('/')[-1]
 
-        command1="curl -s "+'"'+link+'" -H "User-Agent: EMS Toolkit (dfe3b314c95db26fafbc758c17db76ec)" -H "Referer: '+link+'" -H "Connection: keep-alive" > '+ file_name
-        os.system(command1)
+        command="curl -# "+'"'+link+'" -H "User-Agent: EMS Toolkit (dfe3b314c95db26fafbc758c17db76ec)" -H "Referer: '+link+'" -H "Connection: keep-alive" > '+ file_name
+        os.system(command)
 
         print "%s downloaded!\n"%file_name
     return
