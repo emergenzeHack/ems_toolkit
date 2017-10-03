@@ -17,7 +17,7 @@ def get_pics_links(archive_url, pics_conf):
     soup = BeautifulSoup(r.content,'html5lib')
     # find all links on web-page
     links = soup.findAll('a')
-    # filter the link sending with .pics
+    # filter the links ending with .pics
     pics_links = [link['href'] for link in links if link['href'].endswith(pics_conf[1]+'dpi'+'.'+pics_conf[0])]
 
     return pics_links
@@ -30,7 +30,7 @@ def download_pics_series(pics_links):
         #obtain filename
         file_name = link.split('/')[-1]
 
-        command="curl -O "+'"'+link+'"'
+        command="curl -# -O "+'"'+link+'" -H "User-Agent: EMS Toolkit (dfe3b314c95db26fafbc758c17db76ec)" -H "Connection: keep-alive" '
         os.system(command)
 
         print "%s downloaded!\n"%file_name
